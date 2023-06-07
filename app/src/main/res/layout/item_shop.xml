@@ -1,0 +1,41 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:rowCount="3"
+    tools:context=".activities.AllcategoriesActivity"
+    android:id="@+id/categories_list_container"
+    >
+
+<LinearLayout
+android:layout_margin="@dimen/_10sdp"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="150dp"
+        android:id="@+id/imageshopitem"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/text1shopitem"
+
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/text2shopitem"
+
+        ></TextView>
+</LinearLayout>
+
+
+</GridLayout>

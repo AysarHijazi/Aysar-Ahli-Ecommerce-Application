@@ -1,0 +1,20 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:rowCount="3"
+    tools:context=".activities.AllcategoriesActivity"
+    android:id="@+id/categories_list_container"
+    >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttoncatgories"
+        android:layout_width="136dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/category" />
+
+
+</GridLayout>

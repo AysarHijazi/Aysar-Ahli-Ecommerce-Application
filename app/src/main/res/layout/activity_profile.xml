@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        ></ImageView>
+
+    <ImageView
+        android:id="@+id/finalImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView"></ImageView>
+
+    <Button
+        android:id="@+id/buttonAddPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_100sdp"
+        android:layout_marginEnd="@dimen/_100sdp"
+        app:layout_constraintTop_toBottomOf="@+id/finalImage"
+
+        ></Button>
+
+
+    <Button
+        android:id="@+id/uploadPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_100sdp"
+        android:layout_marginEnd="@dimen/_100sdp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddPhoto"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

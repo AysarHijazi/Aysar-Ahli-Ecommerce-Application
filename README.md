@@ -1,4 +1,3 @@
-# Ecommerce-App
 Aysar Ecommerce-App  Android java
 ه
 This application was designed by the Jordanian programmer, Ayser Hijazi,

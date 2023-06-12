@@ -24,6 +24,7 @@ import com.example.aysarproject.retrofit.RetrofitClint;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -37,7 +38,7 @@ public class HomePageActivity extends AppCompatActivity implements ShopInt {
     RecyclerView recyclerViewhomecategories;
 
     RecyclerView recyclerViewhomeclothescollections;
-    ImageButton imageButtonprofile;
+    CircleImageView imageButtonprofile;
     TextView textCat;
 
 
@@ -61,7 +62,7 @@ public class HomePageActivity extends AppCompatActivity implements ShopInt {
         imageButtonprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomePageActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, ProfileHomeActivity.class);
                 startActivity(intent);
             }
         });

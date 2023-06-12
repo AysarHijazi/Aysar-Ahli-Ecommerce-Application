@@ -1,4 +1,15 @@
 <resources>
+    <string name="app_name1">عربي</string>
+    <string name="app_nameprofile">my profile</string>
+    <string name="app_nameaccount">Account</string>
+    <string name="app_nameother">Other</string>
+    <string name="app_namecategories">categories</string>
+    <string name="app_namecollections">collections</string>
+
     <string name="app_name">AysarProject</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string-array name="languages">
+        <item>english</item>
+        <item>عربي</item>
+    </string-array>
 </resources>

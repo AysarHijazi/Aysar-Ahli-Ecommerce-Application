@@ -2,6 +2,7 @@ package com.example.aysarproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,7 @@ public class ProfileActivity extends AppCompatActivity implements BSImagePicker.
     ImageView finalImage;
     Button uploadPhoto;
     String imagePath;
+    ImageView backarrowprofileedit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,17 @@ public class ProfileActivity extends AppCompatActivity implements BSImagePicker.
         buttonAddPhoto = findViewById(R.id.buttonAddPhoto);
         finalImage = findViewById(R.id.finalImage);
         uploadPhoto = findViewById(R.id.uploadPhoto);
+        backarrowprofileedit=findViewById(R.id.backarrowprofileedit);
+
+
+        backarrowprofileedit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(ProfileActivity.this,ProfileHomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         buttonAddPhoto.setOnClickListener(new View.OnClickListener() {
             @Override

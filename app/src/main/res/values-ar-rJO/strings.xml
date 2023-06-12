@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>english</item>
+        <item>عربي</item>
+    </string-array>
+    <string name="app_name1">عربي</string>
+    <string name="app_nameprofile">الملف الشخصي</string>
+    <string name="app_nameaccount">الحساب</string>
+    <string name="app_nameother">اخرى</string>
+    <string name="app_namecategories">الفئات</string>
+    <string name="app_namecollections">المجموعات</string>
+    <string name="app_name">عربي</string>
+    <string name="title_activity_maps">عربي</string>
+</resources>

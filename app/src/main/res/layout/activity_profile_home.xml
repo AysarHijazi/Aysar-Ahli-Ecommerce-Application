@@ -25,12 +25,14 @@
 
         <TextView
             android:id="@+id/textprofiletitle"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:text="my profile"
+            android:text="@string/app_nameprofile"
+            android:textColor="@color/black"
             android:textSize="@dimen/_15ssp"
 
             />
@@ -45,14 +47,16 @@
         android:layout_marginStart="@dimen/_30sdp"
         android:layout_marginEnd="@dimen/_30sdp"
         android:fontFamily="@font/poppinsbold"
-        android:text="Account"
-        android:textSize="@dimen/_12ssp"
+        android:text="@string/app_nameaccount"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintTop_toBottomOf="@+id/liniarprofile1"></TextView>
 
     <LinearLayout
 
+        android:id="@+id/accountlinear1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_80sdp"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/textprofile2"
 
@@ -60,11 +64,13 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/photoimageprofile"
-            android:layout_width="@dimen/_70sdp"
-            android:layout_height="@dimen/_70sdp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/img"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/img_4"
             app:civ_border_color="@android:color/black"
             app:civ_border_width="1dp" />
 
@@ -80,24 +86,278 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
+
                 ></TextView>
 
             <TextView
                 android:id="@+id/textprofiletext2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></TextView>
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="edit my info"
+
+                android:textColor="@color/black"></TextView>
 
         </LinearLayout>
 
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/profilegoarrwo"
+            android:layout_width="@dimen/_50sdp"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_arrow_forward_24"
-
-            ></ImageView>
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_2"></ImageView>
 
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/accountlinear1"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/app_nameother"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/offershistoryimage"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/baseline_history_24"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:text="offers history"
+                android:textColor="@color/black"></TextView>
+
+            <ImageView
+
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_2"></ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/aboutusphoto"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/aaaaaa"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:text="about us"
+                android:textColor="@color/black"></TextView>
+
+            <ImageView
+                android:id="@+id/aboutusgo"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_2"></ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/termsprivacypolicyphoto"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/baseline_privacy_tip_24"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:text="terms and privacy policy"
+                android:textColor="@color/black"></TextView>
+
+            <ImageView
+                android:id="@+id/policygo"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_2"></ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/baseline_language_24"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:text="language"
+                android:textColor="@color/black"></TextView>
+
+            <Spinner
+                android:id="@+id/languagebuttoninprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/poppinsbold"
+                android:entries="@array/languages"
+                android:textColor="@color/color1" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/baseline_notifications_none_24"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:text="notification"
+                android:textColor="@color/black"></TextView>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:shadowColor="@color/teal_700"></Switch>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/baseline_exit_to_app_24"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:text="sign out"
+                android:textColor="@color/black"></TextView>
+
+            <ImageView
+                android:id="@+id/imgViewSignOut"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_2"></ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
